@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+<!-- Link to Bulma CSS framework. I am using this rather than Bootstrap to gain experience as we may not use Bootstrap for the Project-01. -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <nav class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">
+              Weather Dashboard
+            </p>
+        </div>
+    </nav>
+
+   
+    <section class="columns body-information">
+
+        <aside class="column is-one-fifth is-fullheight section navbar-aside">
+            <p class="subtitle">Search for a city:</p>
+        <ul id="search-form">
+            <input id="search-city" class="input" type="text" placeholder="Sacramento">
+            <button id="button-search" class="button is-fullwidth button-search" type="submit required">Search</button>
+            <button id="button-clear" class="button is-fullwidth button-search" type="submit required">Clear Searches</button>
+        </ul>
+        </aside>
+
+        <section class="column is-four-fifth body-info">
+            <div class="columns section">
+                <div class="container">
+                    <div id="current-weather" class="card">
+                        <div class="card-header">
+                            <h2 id="current-city" class="card-header-title">City</h2>
+                        </div>
+                        <ul class="card-content">
+                            <p class="content">Temperature: <span id="current-temperature"></span></p>
+                            <p class="content">Wind Speed: <span id="current-wind-speed"></span></p>
+                            <p class="content">Humidity: <span id="current-humidity"></span></p>
+                            <p class="content"></p>UV Index: <span id="current-uv-index" ></span></p>
+                        </ul>
+                    </div>
+
+                    
+                    <div id="cardContainer" class="columns section auto-gen-cards">
+                        <div class="column is-one-fifth">
+                            <div class="card column">
+                                <p class="content">{DATE}</p>
+                                <p class="content">Temperature:</p>
+                                <p class="content">Wind Speed:</p>
+                                <p class="content">Humidity:</p>
+                                <p class="content">UV Index:</p>
+                            </div>
+                        </div>
+
+                        <div class="column is-one-fifth">
+                            <div class="card column">
+                                <p class="content">{DATE}</p>
+                                <p class="content">Temperature:</p>
+                                <p class="content">Wind Speed:</p>
+                                <p class="content">Humidity:</p>
+                                <p class="content">UV Index:</p>
+                            </div>
+                        </div>
+
+                        <div class="column is-one-fifth">
+                            <div class="card column">
+                                <p class="content">{DATE}</p>
+                                <p class="content">Temperature:</p>
+                                <p class="content">Wind Speed:</p>
+                                <p class="content">Humidity:</p>
+                                <p class="content">UV Index:</p>
+                            </div>
+                        </div>
+
+                        <div class="column is-one-fifth">
+                            <div class="card column">
+                                <p class="content">{DATE}</p>
+                                <p class="content">Temperature:</p>
+                                <p class="content">Wind Speed:</p>
+                                <p class="content">Humidity:</p>
+                                <p class="content">UV Index:</p>
+                            </div>
+                        </div>
+
+                        <div class="column is-one-fifth">
+                            <div class="card column">
+                                <p class="content">{DATE}</p>
+                                <p class="content">Temperature:</p>
+                                <p class="content">Wind Speed:</p>
+                                <p class="content">Humidity:</p>
+                                <p class="content">UV Index:</p>
+                            </div>
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>          
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scrips.js"></script>
+
+</body>
+</html>

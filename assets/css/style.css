@@ -1,0 +1,11 @@
+.hero {
+    background: linear-gradient(to top left, #28B487, #7DD56F);
+}
+
+.auto-gen-cards {
+    padding: 1vw;
+}
+
+.button-search {
+    margin-top: 3vh;  
+}
